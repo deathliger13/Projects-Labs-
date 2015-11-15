@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>tsp</name>
+    </assembly>
+    <members>
+        <member name="T:Tsp.Cities">
+            <summary>
+            Этот класс содержит список городов для этого теста.
+            Каждый город имеет место и информацию о расстоянии до любой другой город.
+            </summary>
+        </member>
+        <member name="M:Tsp.Cities.CalculateCityDistances(System.Int32)">
+            <summary>
+            Determine the distances between each city.
+            </summary>
+            <param name="numberOfCloseCities">При создании начальной популяции туров, это больше шансов
+            что неподалеку город будет выбран для связи. Это число близлежащих городов, которые будут рассмотрены близко.</param>
+        </member>
+        <member name="M:Tsp.Cities.OpenCityList(System.String)">
+            <summary>
+            Открыть файл ХМЛ где находиться список городов.
+            </summary>
+            <param name="fileName">Название файла.</param>
+            <returns>Список городов.</returns>
+            <exception cref="T:System.IO.FileNotFoundException">Неправильное имя.</exception>
+            <exception cref="T:System.InvalidCastException">неправильный формат.</exception>
+        </member>
+        <member name="T:Tsp.City">
+            <summary>
+            Индивидуальные города.
+            </summary>
+        </member>
+        <member name="M:Tsp.City.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Конструктор маршрута.
+            </summary>
+            <param name="x">X позиция города.</param>
+            <param name="y">Y позиция города.</param>
+        </member>
+        <member name="F:Tsp.City.location">
+            <summary>
+            ЗАКРЫТАЯ КОПИЯ МЕСТОПОЛОЖЕНИЯ ГОРОДА.
+            </summary>
+        </member>
+        <member name="F:Tsp.City.distances">
+            <summary>
+            Личная копия расстояния от этого города и любой другой город.
+            Индекс в массиве это количество города, связанного с...
+            </summary>
+        </member>
+        <member name="F:Tsp.City.closeCities">
+            <summary>
+            Личная копия списка городов, которые ближе к этому.
+            </summary>
+        </member>
+        <member name="M:Tsp.City.FindClosestCities(System.Int32)">
+            <summary>
+            Поиск городов которые ближе к этому городу.
+            </summary>
+            <param name="numberOfCloseCities">При создании начальной популяции туров, это больше шансов
+            что неподалеку город будет выбран для связи. Это число близлежащих городов, которые будут считать близким.</param>
+        </member>
+        <member name="P:Tsp.City.Location">
+            <summary>
+            Положение города.
+            </summary>
+        </member>
+        <member name="P:Tsp.City.Distances">
+            <summary>
+            Расстояние от 1 города к любому другому.
+            </summary>
+        </member>
+        <member name="P:Tsp.City.CloseCities">
+            <summary>
+            Список городов, которые ближе к этому.
+            </summary>
+        </member>
+        <member name="T:Tsp.Link">
+            <summary>
+            Индивидуальная связь между 2 городами в туре.
+            Этот город соединяет 2 других города.
+            </summary>
+        </member>
+        <member name="F:Tsp.Link.connection1">
+            <summary>
+            Соединение с "Первым" Городом.
+            </summary>
+        </member>
+        <member name="F:Tsp.Link.connection2">
+            <summary>
+            Соединение с "Вторым" Городом.
+            </summary>
+        </member>
+        <member name="P:Tsp.Link.Connection1">
+            <summary>
+            Соединение с "Первым" Городом.
+            </summary>
+        </member>
+        <member name="P:Tsp.Link.Connection2">
+            <summary>
+            Соединение с "Вторым" Городом.
+            </summary>
+        </member>
+        <member name="F:Tsp.Population.bestTour">
+            <summary>
+            Личная копия лучшего тура который нашёл до сих пор генетический алгоритм.
+            </summary>
+        </member>
+        <member name="M:Tsp.Population.CreateRandomPopulation(System.Int32,Tsp.Cities,System.Random,System.Int32)">
+            <summary>
+            Создать начальный набор случайных туров.
+            </summary>
+            <param name="populationSize">Число туров для создания.</param>
+            <param name="cityList">Список городов в туре.</param>
+            <param name="rand">Генератор случайных чисел. Мы проходим примерно, так что результаты между трасс соответствуют.</param>
+            <param name="chanceToUseCloseCity">Шансы (из 100), что город, который, как известно, чтобы быть близко будет использоваться в любой данной линии связи.</param>
+        </member>
+        <member name="P:Tsp.Population.BestTour">
+            <summary>
+            Лучший тур который нашёл до сих пор генетический алгоритм.
+            </summary>
+        </member>
+        <member name="T:Tsp.Program">
+            <summary>
+            Содержит основу, с которой начинается этот вид.
+            </summary>
+        </member>
+        <member name="M:Tsp.Program.Main">
+            <summary>
+            Главная тоска входа.
+            </summary>
+        </member>
+        <member name="T:Tsp.Tour">
+            <summary>
+            Этот класс представляет один экземпляр тура по всем городам.
+            </summary>
+        </member>
+        <member name="M:Tsp.Tour.#ctor(System.Int32)">
+             <summary>
+            Конструктор, который принимает мощность по умолчанию.
+             </summary>
+             <param name="capacity">Начальный размер тура. Должен быть ряд городов в турне.</param>
+        </member>
+        <member name="F:Tsp.Tour.fitness">
+            <summary>
+            Личная копия пригодности этого тура.Фитнес функция.
+            </summary>
+        </member>
+        <member name="M:Tsp.Tour.resetTour(System.Int32)">
+            <summary>
+            Создает тур с правильным количеством городов и создает начальные подключения всех -1.
+            </summary>
+            <param name="numberOfCities"></param>
+        </member>
+        <member name="M:Tsp.Tour.DetermineFitness(Tsp.Cities)">
+            <summary>
+            Определяет пригодность (общая длина) отдельного тура.
+            </summary>
+            <param name="cities">Города в этом туре. Используется для получения расстояния между каждом городе.</param>
+        </member>
+        <!-- Некорректный комментарий в формате XML для члена "M:Tsp.Tour.joinCities(Tsp.Tour,System.Int32[],System.Int32,System.Int32)" проигнорирован -->
+        <member name="M:Tsp.Tour.findNextCity(Tsp.Tour,Tsp.Tour,Tsp.Cities,System.Int32[],System.Int32)">
+            <summary>
+            Найти ссылку из данного города в родительском туре, которые могут быть размещены в туре ребенка.
+            Если обе ссылки родителя не являются допустимыми ссылками на тур с детьми, вернуть -1.
+            </summary>
+            <param name="parent">Родительский тур</param>
+            <param name="child">Замещёный детский тур.</param>
+            <param name="cityList">Список городов в туре.</param>
+            <param name="cityUsage">Количество"Детских" городов.</param>
+            <param name="city">Город с которым хотим сконтачить.</param>
+            <returns>Детский тур.</returns>
+        </member>
+        <member name="M:Tsp.Tour.testConnectionValid(Tsp.Tour,Tsp.Cities,System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            Если два города могут быть подключены уже (witout делать полный тур), то это недопустимая ссылка.
+            </summary>
+            <param name="tour">Незаконченый "Детский" тур.</param>
+            <param name="cityList">Список городов.</param>
+            <param name="cityUsage">Массив, который содержит количество раз когда каждый город был связан.</param>
+            <param name="city1">1 город "Вконтакте)))".</param>
+            <param name="city2">2 город "Вконтакте)))"..</param>
+            <returns>True Если соединение возможно.</returns>
+        </member>
+        <member name="M:Tsp.Tour.Crossover(Tsp.Tour,Tsp.Tour,Tsp.Cities,System.Random)">
+            <summary>
+            Выполните операцию кроссовера на 2 родительских туров, чтобы создать новый тур ребенка.
+            Эта функция должна быть вызвана два раза, чтобы сделать 2 детей.
+            По второму призыву зщначение родителей должно быть изменено
+            </summary>
+            <param name="parent1">1 путишествие</param>
+            <param name="parent2">" путишествие.</param>
+            <param name="cityList">Список городов в туре.</param>
+            <param name="rand">.</param>
+            <returns>The child tour.</returns>
+        </member>
+        <member name="M:Tsp.Tour.Mutate(System.Random)">
+            <summary>
+            Случайно изменяет одну из ссылок в этом туре.
+            </summary>
+            <param name="rand">Генератор случайных чисел. Мы проходим примернно, так что результаты между трасс соответствуют.</param>
+        </member>
+        <member name="P:Tsp.Tour.Fitness">
+            <summary>
+            Фитнес фннкция (общая длина тура) этого тура
+            </summary>
+        </member>
+        <member name="T:Tsp.Tsp">
+            <summary>
+            Этот класс выполняет алгоритм коммивояжера.
+            </summary>
+        </member>
+        <member name="F:Tsp.Tsp.rand">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Tsp.Tsp.cityList">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Tsp.Tsp.population">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Tsp.Tsp.halt">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Tsp.Tsp.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Tsp.Tsp.Begin(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Tsp.Cities)">
+            <summary>
+            <see cref="P:Tsp.Tsp.Halt"/> 
+            </summary>
+            <param name="populationSize">рандом</param>
+            <param name="maxGenerations">Кроссовер</param>
+            <param name="groupSize">Выбор родителей и создание детей</param>
+            <param name="mutation">Мутации</param>
+            <param name="seed">Розсеивание</param>
+            <param name="chanceToUseCloseCity">Ближайший город</param>
+            <param name="cityList">Список городов.</param>
+        </member>
+        <member name="M:Tsp.Tsp.makeChildren(System.Int32,System.Int32)">
+            <summary>
+            </summary>
+            <param name="groupSize">Число туров</param>
+            <param name="mutation">Мутирование наследника.</param>
+        </member>
+        <member name="M:Tsp.Tsp.displayTour(Tsp.Tour,System.Int32,System.Boolean)">
+            <summary>
+            </summary>
+            <param name="bestTour">Лутший алгоритм не так далеко</param>
+            <param name="generationNumber">Созданые поколения.</param>
+            <param name="complete">Алгоритм ТСП окончен.</param>
+        </member>
+        <member name="E:Tsp.Tsp.foundNewBestTour">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Tsp.Tsp.Halt">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Tsp.Tsp.NewBestTourEventHandler">
+            <summary>
+            Делегат используется для повышения событие, когда новый лучший тур найден.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Tsp.TspForm">
+            <summary>
+            Главная форма для задачи коммивояжера
+            </summary>
+        </member>
+        <member name="F:Tsp.TspForm.cityList">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Tsp.TspForm.tsp">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Tsp.TspForm.cityImage">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Tsp.TspForm.cityGraphics">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Tsp.TspForm.#ctor">
+            <summary>
+            constructor.
+            </summary>
+        </member>
+        <member name="M:Tsp.TspForm.tsp_foundNewBestTour(System.Object,Tsp.TspEventArgs)">
+            <summary>
+            ТСП алгоритм поднял событие, был найден новый лучший тур.
+            Мы должны сделать пробуждение на GUI потоке, прежде чем делать какие-либо части кода.        /// </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Tsp.TspForm.DrawTour(System.Object,Tsp.TspEventArgs)">
+            <summary>
+            Новый "лучше" тур из алгоритма TSP был получен.
+            Нарисуйте тур по форме, и обновить пару меток статуса.</summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Tsp.TspForm.DrawCityList(Tsp.Cities)">
+            <summary>
+            Рисует список городов.
+            </summary>
+            <param name="cityList">Список городов для рисования.</param>
+        </member>
+        <member name="M:Tsp.TspForm.StartButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Пользователь нажал кнопку Пуск, чтобы начать алгоритм TSP.
+            Если он уже запущен, то эта кнопка будет сказать стоп, и мы будем останавливаться ПБО.
+            В противном случае,  </summary>
+            <param name="sender">Обьект создавший событие</param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Tsp.TspForm.BeginTsp(System.Object)">
+            <summary>
+            Запускает класс TSP.
+            Эта функция выполняет на нить пула потоков.  </summary>
+            <param name="stateInfo">Not used</param>
+        </member>
+        <member name="M:Tsp.TspForm.selectFileButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Пользовательский выбор нового списка Городов XML файла.
+            Если запуск алгоритма TSP не допускаются. </summary>
+            <param name="sender">Обьект создавший данные условия.</param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Tsp.TspForm.openCityListButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Пользователь выбрал, чтобы открыть </summary>
+            <param name="sender">Обьект создавший данные условия.</param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Tsp.TspForm.clearCityListButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Очистка списка
+            </summary>
+            <param name="sender">Обьект создавший данные условия.</param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Tsp.TspForm.tourDiagram_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Пользователь нажал точку на карте города.
+            Пока мы не работают алгоритм TSP,
+            Разместить новый город на карте и добавить его в список города.</summary>
+            <param name="sender">Обьект создавший данные условия.</param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Tsp.TspForm.updateCityCount">
+            <summary>
+            Количество городов на форме.
+            </summary>
+        </member>
+        <member name="F:Tsp.TspForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Tsp.TspForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Tsp.TspForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Tsp.TspForm.DrawEventHandler">
+            <summary>
+            </summary>
+            <param name="sender">Обьект создавшый даное событие.</param>
+            <param name="e">Переменные события.</param>
+        </member>
+        <member name="T:Tsp.TspEventArgs">
+            <summary>
+            Условия для проведения мероприятий аргументы, когда класс ТСП хочет графический интерфейс, чтобы привлечь тур.
+            </summary>
+        </member>
+        <member name="M:Tsp.TspEventArgs.#ctor">
+            <summary>
+            Конструктор по умолшчанию
+            </summary>
+        </member>
+        <member name="M:Tsp.TspEventArgs.#ctor(Tsp.Cities,Tsp.Tour,System.Int32,System.Boolean)">
+            <summary>
+            Конструктор который задает параметры
+            </summary>
+            <param name="cityList"></param>
+            <param name="bestTour"></param>
+            <param name="generation"></param>
+            <param name="complete"></param>
+        </member>
+        <member name="T:Tsp.Properties.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:Tsp.Properties.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:Tsp.Properties.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+    </members>
+</doc>

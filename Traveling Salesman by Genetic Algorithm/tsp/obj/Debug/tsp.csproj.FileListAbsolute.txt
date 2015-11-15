@@ -1,0 +1,35 @@
+C:\Users\Сергей\Desktop\ \Метода к прогам\Курсач\tsp\bin\Debug\tsp.XML
+C:\Users\Сергей\Desktop\ \Метода к прогам\Курсач\tsp\bin\Debug\tsp.exe
+C:\Users\Сергей\Desktop\ \Метода к прогам\Курсач\tsp\bin\Debug\tsp.pdb
+C:\Users\Сергей\Desktop\ \Метода к прогам\Курсач\tsp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Сергей\Desktop\ \Метода к прогам\Курсач\tsp\obj\Debug\Tsp.Properties.Resources.resources
+C:\Users\Сергей\Desktop\ \Метода к прогам\Курсач\tsp\obj\Debug\Tsp.TspForm.resources
+C:\Users\Сергей\Desktop\ \Метода к прогам\Курсач\tsp\obj\Debug\tsp.exe
+C:\Users\Сергей\Desktop\ \Метода к прогам\Курсач\tsp\obj\Debug\tsp.pdb
+C:\Users\Олег\Desktop\Новая папка\tsp\bin\Debug\tsp.XML
+C:\Users\Олег\Desktop\Новая папка\tsp\obj\Debug\tsp.exe
+C:\Users\Олег\Desktop\Новая папка\tsp\obj\Debug\tsp.pdb
+C:\Users\Олег\Desktop\Новая папка\tsp\bin\Debug\tsp.exe
+C:\Users\Олег\Desktop\Новая папка\tsp\bin\Debug\tsp.pdb
+C:\Users\Олег\Desktop\Новая папка\tsp\obj\Debug\tsp.csprojResolveAssemblyReference.cache
+C:\Users\Олег\Desktop\Новая папка\tsp\obj\Debug\Tsp.Properties.Resources.resources
+C:\Users\Олег\Desktop\Новая папка\tsp\obj\Debug\Tsp.TspForm.resources
+C:\Users\Олег\Desktop\Новая папка\tsp\obj\Debug\tsp.csproj.GenerateResource.Cache
+F:\Новая папка\tsp\bin\Debug\tsp.XML
+F:\Новая папка\tsp\obj\Debug\tsp.exe
+F:\Новая папка\tsp\obj\Debug\tsp.pdb
+F:\Новая папка\tsp\bin\Debug\tsp.exe
+F:\Новая папка\tsp\bin\Debug\tsp.pdb
+F:\Новая папка\tsp\obj\Debug\tsp.csprojResolveAssemblyReference.cache
+F:\Новая папка\tsp\obj\Debug\Tsp.Properties.Resources.resources
+F:\Новая папка\tsp\obj\Debug\Tsp.TspForm.resources
+F:\Новая папка\tsp\obj\Debug\tsp.csproj.GenerateResource.Cache
+G:\Новая папка\tsp\bin\Debug\tsp.XML
+G:\Новая папка\tsp\obj\Debug\tsp.exe
+G:\Новая папка\tsp\obj\Debug\tsp.pdb
+G:\Новая папка\tsp\bin\Debug\tsp.exe
+G:\Новая папка\tsp\bin\Debug\tsp.pdb
+G:\Новая папка\tsp\obj\Debug\tsp.csprojResolveAssemblyReference.cache
+G:\Новая папка\tsp\obj\Debug\Tsp.Properties.Resources.resources
+G:\Новая папка\tsp\obj\Debug\Tsp.TspForm.resources
+G:\Новая папка\tsp\obj\Debug\tsp.csproj.GenerateResource.Cache
