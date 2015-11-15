@@ -1,0 +1,39 @@
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\Метод рухомого середнього.csprojResolveAssemblyReference.cache
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Форма.resources
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\Метод рухомого середнього.csproj.GenerateResource.Cache
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\VLAD\Desktop\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\Метод рухомого середнього.csprojResolveAssemblyReference.cache
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Форма.resources
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Головін О\СА\Lab_2\Lab_3\Lab_3\WindowsFormsApplication1\obj\Debug\Метод рухомого середнього.csproj.GenerateResource.Cache
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\obj\Debug\Метод рухомого середнього.csprojResolveAssemblyReference.cache
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Форма.resources
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Головін О\СА\Lab_2\WindowsFormsApplication1\obj\Debug\Метод рухомого середнього.csproj.GenerateResource.Cache
+C:\Users\Олег\Desktop\Lab_2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Олег\Desktop\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Олег\Desktop\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\obj\Debug\Метод рухомого середнього.csprojResolveAssemblyReference.cache
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Форма.resources
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Учёба\Системний Аналіз\Labs\Lab_2\WindowsFormsApplication1\obj\Debug\Метод рухомого середнього.csproj.GenerateResource.Cache
