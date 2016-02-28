@@ -1,0 +1,191 @@
+body {
+  background-color: #eee;
+}
+
+.ibox {
+  clear: both;
+  margin-top: 0;
+  padding: 0;
+}
+
+.ibox-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: inherit;
+  border-style: solid solid none;
+  border-width: 4px 0px 0;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 14px 15px 7px;
+  height: 50px;
+  border-bottom: 1px solid #E7EAEC;
+}
+
+/* Chat view */
+.message-input {
+  height: 90px !important;
+  padding: 16px 16px 16px 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 0;
+}
+.chat-avatar {
+/*  width: 36px;
+  height: 36px;*/
+  margin-top: 5px;
+  float: left;
+  margin-right: 10px;
+}
+.chat-user-name {
+  padding: 8px;
+}
+.chat-user {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e7eaec;
+}
+.chat-user a {
+  color: inherit;
+}
+/*------------------------*/
+.chat-view .ibox-content {
+  /*height: 500px;*/
+}
+.theme-config-box {
+  z-index: 1;
+}
+.chat-view {
+  z-index: 20012;
+}
+.chat-users,
+.chat-statistic {
+  margin-left: -30px;
+}
+@media (max-width: 992px) {
+  .chat-users,
+  .chat-statistic {
+    margin-left: 0px;
+  }
+}
+.chat-view .ibox-content {
+  padding: 0;
+}
+.chat-message {
+  padding: 10px 0px;
+}
+.chat-message pre {
+  text-align: left;
+}
+.message-avatar {
+  /*height: 48px;
+  width: 48px;*/
+  border: 1px solid #e7eaec;
+  border-radius: 4px;
+  margin-top: 1px;
+}
+.chat-discussion .chat-message.left .message-avatar {
+  float: left;
+  margin-right: 10px;
+}
+.chat-discussion .chat-message.right .message-avatar {
+  float: right;
+  margin-left: 10px;
+}
+.message {
+  background-color: #fff;
+  border: 1px solid #e7eaec;
+  text-align: left;
+  display: block;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 4px;
+}
+.chat-discussion .chat-message.right .message-date {
+  float: left;
+}
+.chat-discussion .chat-message.left .message-date {
+  float: right;
+}
+.chat-discussion .chat-message.left .message {
+  text-align: left;
+  margin-left: 55px;
+}
+.chat-discussion .chat-message.right .message {
+  text-align: right;
+  margin-right: 55px;
+}
+.message-date {
+  font-size: 10px;
+  color: #888888;
+}
+.message-content {
+  display: block;
+}
+.chat-discussion {
+  width: 100%;
+  background: #eee;
+  padding: 15px;
+  height: 400px;
+  overflow-y: auto;
+  height: calc(100vh - 140px);
+}
+.chat-users {
+  overflow-y: auto;
+  height: calc(100vh - 140px);
+  background-color: #fff;
+}
+.chat-message-form .form-group {
+  margin-bottom: 0;
+}
+
+input[type="text"], textarea {
+  outline: none;
+  box-shadow:none !important;
+  border:1px solid #ccc !important;
+}
+
+#login-dropdown-list {
+  left: auto;
+  right: 0;
+}
+
+#login-buttons .login-close-text {
+  float: right;
+}
+
+.emoji {
+  height: 20px;
+  vertical-align: sub;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+body > .dropdown-menu {
+  top: auto !important;
+  bottom: 76px !important;
+}
+
+body > .container-fluid {
+  overflow-x: hidden;
+}
+
+.textarea-avatar {
+  z-index: 100;
+  position: fixed;
+  left: 14px;
+  bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .chat-users {
+    display: none;
+  }
+}
