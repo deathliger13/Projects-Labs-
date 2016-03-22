@@ -1,0 +1,12 @@
+<template name="ChatUser">
+  <div class="chat-user">
+    {{> avatar userId=_id
+               size="small"
+               shape="circle"
+               class="chat-avatar"
+               bgColor=color }}
+    <div class="chat-user-name">
+      <a href="#">{{username}}</a>
+    </div>
+  </div>
+</template>

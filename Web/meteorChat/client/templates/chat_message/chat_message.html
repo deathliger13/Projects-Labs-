@@ -1,0 +1,16 @@
+<template name="ChatMessage">
+  <div class="chat-message {{floatСlass}}">
+    {{> avatar userId=userId
+               size="middle"
+               shape="circle"
+               class="message-avatar"
+               bgColor=author.color }}
+    <div class="message">
+      <a class="message-author" href="#"> {{author.username}} </a>
+      <span class="message-date"> {{timeFromNow}} </span>
+      <span class="message-content">
+        {{#markdown}}{{#emoji}}{{text}}{{/emoji}}{{/markdown}}
+      </span>
+    </div>
+  </div>
+</template>
